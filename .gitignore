@@ -1,0 +1,30 @@
+# Go specific
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.prof
+*.out
+*.test
+/build/
+/release/
+/vendor/
+*.log
+
+# Goland specific
+.idea/
+*.iml
+*.ipr
+*.iws
+/.idea_modules/
+.idea/
+*.code-workspace
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+.idea/tasks.xml
+
+# go.sum
+go.sum

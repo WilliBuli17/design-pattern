@@ -1,0 +1,41 @@
+-- Design Patterns
+        -- Dalam rekayasa perangkat lunak, design pattern adalah solusi umum yang dapat diulang untuk masalah yang sering
+           muncul dalam desain perangkat lunak. Design pattern bukanlah desain jadi yang bisa langsung diubah menjadi kode.
+           Design pattern adalah deskripsi atau template tentang bagaimana cara menyelesaikan suatu masalah yang dapat digunakan
+           dalam berbagai situasi yang berbeda.
+        -- Design pattern adalah solusi umum untuk masalah yang sering terjadi dalam rekayasa perangkat lunak.
+           Design pattern mirip dengan blueprint yang dapat disesuaikan untuk menyelesaikan masalah desain yang sering
+           muncul dalam kode. Design pattern tidak sama dengan algoritma, yang selalu menentukan serangkaian tindakan yang
+           jelas untuk mencapai tujuan. Design pattern memberikan gambaran solusi yang lebih tingkat atas.
+           Design pattern dapat diterapkan dengan kode yang berbeda pada program yang berbeda.
+           Dalam analogi, algoritma seperti resep memasak, sementara design pattern seperti blueprint.
+        -- Konsep design pattern pertama kali dijelaskan oleh Christopher Alexander dalam bukunya
+           "A Pattern Language: Towns, Buildings, Construction". Empat penulis kemudian mengembangkan konsep ini dalam buku
+           "Design Patterns: Elements of Reusable Object-Oriented Software" yang dikenal dengan “the GoF book”.
+           Buku ini terdiri dari 23 pola desain yang menjadi solusi untuk berbagai masalah dalam desain berorientasi objek.
+           Sejak itu, puluhan pola lainnya telah ditemukan dalam berbagai bidang pemrograman.
+        -- Design pattern adalah toolkit solusi yang telah diuji untuk masalah umum dalam desain perangkat lunak.
+           Meskipun Anda tidak pernah mengalami masalah tersebut, belajar design pattern tetap berguna karena mengajarkan
+           Anda cara memecahkan berbagai masalah menggunakan prinsip desain berorientasi objek. Design pattern juga mendefinisikan
+           bahasa umum yang dapat digunakan oleh Anda dan tim Anda untuk berkomunikasi secara lebih efisien.
+        -- Design pattern berbeda dalam kompleksitas, tingkat detail, dan skala aplikabilitas pada seluruh sistem yang dirancang.
+           Ada pola dasar (idiom) yang hanya berlaku pada satu bahasa pemrograman, dan pola arsitektur yang sangat universal
+           dan dapat diterapkan pada hampir semua bahasa pemrograman.
+           Semua design pattern dapat dikelompokkan berdasarkan tujuan mereka,
+                -- Creational = digunakan untuk membuat objek secara fleksibel dan dapat digunakan kembali.
+                -- Structural = menjelaskan cara menyusun objek dan kelas ke dalam struktur yang lebih besar, tetapi tetap fleksibel dan efisien.
+                -- Behavioral = digunakan untuk komunikasi yang efektif dan penugasan tanggung jawab antar objek.
+           Contohnya, jika kita membandingkan pola desain dengan pembangunan jalan, kita bisa meningkatkan keamanan
+           di sebuah persimpangan dengan memasang lampu lalu lintas atau membangun sebuah jalan layang dengan terowongan
+           bawah tanah untuk pejalan kaki.
+
+-- Factory Method
+        -- Factory method adalah pola desain kreatif yang memecahkan masalah dalam pembuatan objek produk tanpa harus menentukan kelas konkretnya.
+           Metode Factory Method mendefinisikan sebuah metode yang seharusnya digunakan untuk membuat objek,
+           bukan dengan cara langsung memanggil konstruktor (operator new). Subkelas dapat mengganti metode ini untuk mengubah kelas objek yang akan dibuat.
+
+-- Abstract Factory Method
+        -- Abstract Factory adalah pola desain kreatif yang memecahkan masalah menciptakan seluruh keluarga produk tanpa menentukan kelas konkretnya.
+           Abstract Factory mendefinisikan antarmuka untuk membuat semua produk yang berbeda tetapi meninggalkan penciptaan produk sebenarnya kepada kelas pabrik konkret. Setiap jenis pabrik sesuai dengan variasi produk tertentu.
+           Kode pelanggan memanggil metode penciptaan objek pabrik daripada menciptakan produk secara langsung dengan pemanggilan konstruktor (operator baru). Karena pabrik sesuai dengan satu varian produk, semua produknya akan kompatibel.
+           Kode pelanggan hanya bekerja dengan pabrik dan produk melalui antarmuka abstrak mereka. Hal ini memungkinkan kode pelanggan bekerja dengan berbagai varian produk yang dibuat oleh objek pabrik. Anda hanya perlu membuat kelas pabrik konkret baru dan meneruskannya ke kode pelanggan.
