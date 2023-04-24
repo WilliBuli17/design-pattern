@@ -36,6 +36,16 @@
 
 -- Abstract Factory Method
         -- Abstract Factory adalah pola desain kreatif yang memecahkan masalah menciptakan seluruh keluarga produk tanpa menentukan kelas konkretnya.
-           Abstract Factory mendefinisikan antarmuka untuk membuat semua produk yang berbeda tetapi meninggalkan penciptaan produk sebenarnya kepada kelas pabrik konkret. Setiap jenis pabrik sesuai dengan variasi produk tertentu.
-           Kode pelanggan memanggil metode penciptaan objek pabrik daripada menciptakan produk secara langsung dengan pemanggilan konstruktor (operator baru). Karena pabrik sesuai dengan satu varian produk, semua produknya akan kompatibel.
-           Kode pelanggan hanya bekerja dengan pabrik dan produk melalui antarmuka abstrak mereka. Hal ini memungkinkan kode pelanggan bekerja dengan berbagai varian produk yang dibuat oleh objek pabrik. Anda hanya perlu membuat kelas pabrik konkret baru dan meneruskannya ke kode pelanggan.
+        -- Abstract Factory mendefinisikan antarmuka untuk membuat semua produk yang berbeda tetapi meninggalkan penciptaan produk sebenarnya kepada kelas pabrik konkret.
+           Setiap jenis pabrik sesuai dengan variasi produk tertentu.
+        -- Kode pelanggan memanggil metode penciptaan objek pabrik daripada menciptakan produk secara langsung dengan pemanggilan konstruktor (operator baru).
+           Karena pabrik sesuai dengan satu varian produk, semua produknya akan kompatibel.
+        -- Kode pelanggan hanya bekerja dengan pabrik dan produk melalui antarmuka abstrak mereka.
+           Hal ini memungkinkan kode pelanggan bekerja dengan berbagai varian produk yang dibuat oleh objek pabrik.
+           Anda hanya perlu membuat kelas pabrik konkret baru dan meneruskannya ke kode pelanggan.
+
+-- Builder
+        -- Builder adalah pola desain kreatif yang memungkinkan konstruksi objek kompleks secara bertahap.
+           Berbeda dengan pola kreatif lainnya, Builder tidak memerlukan produk untuk memiliki interface yang sama.
+           Hal ini memungkinkan untuk menghasilkan produk yang berbeda menggunakan proses konstruksi yang sama.
+           Singkatnya, Builder memungkinkan pembuatan objek yang kompleks dengan mudah melalui langkah-langkah yang terdefinisi dengan baik.
