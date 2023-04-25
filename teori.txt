@@ -29,23 +29,36 @@
            di sebuah persimpangan dengan memasang lampu lalu lintas atau membangun sebuah jalan layang dengan terowongan
            bawah tanah untuk pejalan kaki.
 
--- Factory Method
-        -- Factory method adalah pola desain kreatif yang memecahkan masalah dalam pembuatan objek produk tanpa harus menentukan kelas konkretnya.
-           Metode Factory Method mendefinisikan sebuah metode yang seharusnya digunakan untuk membuat objek,
-           bukan dengan cara langsung memanggil konstruktor (operator new). Subkelas dapat mengganti metode ini untuk mengubah kelas objek yang akan dibuat.
+-- Creational
+        -- Factory Method
+                -- Factory method adalah pola desain kreatif yang memecahkan masalah dalam pembuatan objek produk tanpa harus menentukan kelas konkretnya.
+                   Metode Factory Method mendefinisikan sebuah metode yang seharusnya digunakan untuk membuat objek,
+                   bukan dengan cara langsung memanggil konstruktor (operator new). Subkelas dapat mengganti metode ini untuk mengubah kelas objek yang akan dibuat.
 
--- Abstract Factory Method
-        -- Abstract Factory adalah pola desain kreatif yang memecahkan masalah menciptakan seluruh keluarga produk tanpa menentukan kelas konkretnya.
-        -- Abstract Factory mendefinisikan antarmuka untuk membuat semua produk yang berbeda tetapi meninggalkan penciptaan produk sebenarnya kepada kelas pabrik konkret.
-           Setiap jenis pabrik sesuai dengan variasi produk tertentu.
-        -- Kode pelanggan memanggil metode penciptaan objek pabrik daripada menciptakan produk secara langsung dengan pemanggilan konstruktor (operator baru).
-           Karena pabrik sesuai dengan satu varian produk, semua produknya akan kompatibel.
-        -- Kode pelanggan hanya bekerja dengan pabrik dan produk melalui antarmuka abstrak mereka.
-           Hal ini memungkinkan kode pelanggan bekerja dengan berbagai varian produk yang dibuat oleh objek pabrik.
-           Anda hanya perlu membuat kelas pabrik konkret baru dan meneruskannya ke kode pelanggan.
+        -- Abstract Factory Method
+                -- Abstract Factory adalah pola desain kreatif yang memecahkan masalah menciptakan seluruh keluarga produk tanpa menentukan kelas konkretnya.
+                -- Abstract Factory mendefinisikan antarmuka untuk membuat semua produk yang berbeda tetapi meninggalkan penciptaan produk sebenarnya kepada kelas pabrik konkret.
+                   Setiap jenis pabrik sesuai dengan variasi produk tertentu.
+                -- Kode pelanggan memanggil metode penciptaan objek pabrik daripada menciptakan produk secara langsung dengan pemanggilan konstruktor (operator baru).
+                   Karena pabrik sesuai dengan satu varian produk, semua produknya akan kompatibel.
+                -- Kode pelanggan hanya bekerja dengan pabrik dan produk melalui antarmuka abstrak mereka.
+                   Hal ini memungkinkan kode pelanggan bekerja dengan berbagai varian produk yang dibuat oleh objek pabrik.
+                   Anda hanya perlu membuat kelas pabrik konkret baru dan meneruskannya ke kode pelanggan.
 
--- Builder
-        -- Builder adalah pola desain kreatif yang memungkinkan konstruksi objek kompleks secara bertahap.
-           Berbeda dengan pola kreatif lainnya, Builder tidak memerlukan produk untuk memiliki interface yang sama.
-           Hal ini memungkinkan untuk menghasilkan produk yang berbeda menggunakan proses konstruksi yang sama.
-           Singkatnya, Builder memungkinkan pembuatan objek yang kompleks dengan mudah melalui langkah-langkah yang terdefinisi dengan baik.
+        -- Builder
+                -- Builder adalah pola desain kreatif yang memungkinkan konstruksi objek kompleks secara bertahap.
+                   Berbeda dengan pola kreatif lainnya, Builder tidak memerlukan produk untuk memiliki interface yang sama.
+                   Hal ini memungkinkan untuk menghasilkan produk yang berbeda menggunakan proses konstruksi yang sama.
+                   Singkatnya, Builder memungkinkan pembuatan objek yang kompleks dengan mudah melalui langkah-langkah yang terdefinisi dengan baik.
+
+        -- Prototype
+                -- Prototype adalah pola desain kreasi yang memungkinkan pengklonan objek, termasuk objek yang kompleks, tanpa terikat pada kelas-kelas spesifiknya.
+                   Setiap kelas prototype harus memiliki antarmuka umum yang memungkinkan pengklonan objek, bahkan jika kelas konkretnya tidak diketahui.
+                   Objek prototype dapat menghasilkan salinan lengkap karena objek dari kelas yang sama dapat mengakses field-field private satu sama lain.
+                -- Ringkasnya, Prototype memungkinkan kita membuat salinan objek dengan mudah tanpa bergantung pada kelas spesifiknya.
+
+        -- Singelton
+                -- Singleton adalah pola desain kreasi yang memastikan hanya satu objek dari jenisnya yang ada dan memberikan satu titik akses kepadanya untuk kode lainnya.
+                   Meskipun sangat berguna, Singleton memiliki keuntungan dan kerugian yang hampir sama dengan variabel global.
+                -- Mereka memecah modularitas kode Anda, sehingga Anda tidak dapat menggunakan kelas yang bergantung pada Singleton di konteks lain tanpa membawa Singleton ke konteks lain tersebut.
+                   Hal ini sering muncul saat pembuatan tes unit. Jadi, Singleton sangat berguna tetapi perlu digunakan dengan hati-hati untuk menjaga modularitas kode Anda.
