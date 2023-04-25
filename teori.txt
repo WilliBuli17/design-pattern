@@ -62,3 +62,9 @@
                    Meskipun sangat berguna, Singleton memiliki keuntungan dan kerugian yang hampir sama dengan variabel global.
                 -- Mereka memecah modularitas kode Anda, sehingga Anda tidak dapat menggunakan kelas yang bergantung pada Singleton di konteks lain tanpa membawa Singleton ke konteks lain tersebut.
                    Hal ini sering muncul saat pembuatan tes unit. Jadi, Singleton sangat berguna tetapi perlu digunakan dengan hati-hati untuk menjaga modularitas kode Anda.
+
+-- Structural
+        -- Adapter
+                -- Adapter adalah pola desain struktural yang memungkinkan objek yang tidak kompatibel untuk berkolaborasi.
+                   Adapter berperan sebagai pembungkus antara dua objek. Ia menangkap panggilan untuk satu objek dan mengubahnya menjadi format dan antarmuka yang dikenali oleh objek kedua.
+                   Dengan menggunakan Adapter, objek yang tadinya tidak dapat berkolaborasi dapat saling bekerja sama dengan mudah.
