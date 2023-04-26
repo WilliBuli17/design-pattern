@@ -68,3 +68,10 @@
                 -- Adapter adalah pola desain struktural yang memungkinkan objek yang tidak kompatibel untuk berkolaborasi.
                    Adapter berperan sebagai pembungkus antara dua objek. Ia menangkap panggilan untuk satu objek dan mengubahnya menjadi format dan antarmuka yang dikenali oleh objek kedua.
                    Dengan menggunakan Adapter, objek yang tadinya tidak dapat berkolaborasi dapat saling bekerja sama dengan mudah.
+
+        -- Bridge
+                -- Bridge adalah pola desain struktural yang membagi logika bisnis atau kelas besar menjadi hierarki kelas terpisah yang dapat dikembangkan secara independen.
+                   Salah satu dari hierarki tersebut (sering disebut Abstraksi) akan mendapatkan referensi ke objek hierarki kedua (Implementasi).
+                   Abstraksi akan dapat mendelegasikan beberapa (kadang-kadang, sebagian besar) panggilannya ke objek implementasi.
+                   Karena semua implementasi akan memiliki antarmuka yang sama, mereka dapat saling dipertukarkan di dalam abstraksi.
+                   Dengan menggunakan Bridge, kita dapat menghindari penggabungan hierarki kelas yang besar dan kompleks sehingga memudahkan pengembangan dan perawatan kode di masa depan.
