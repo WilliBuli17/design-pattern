@@ -75,3 +75,9 @@
                    Abstraksi akan dapat mendelegasikan beberapa (kadang-kadang, sebagian besar) panggilannya ke objek implementasi.
                    Karena semua implementasi akan memiliki antarmuka yang sama, mereka dapat saling dipertukarkan di dalam abstraksi.
                    Dengan menggunakan Bridge, kita dapat menghindari penggabungan hierarki kelas yang besar dan kompleks sehingga memudahkan pengembangan dan perawatan kode di masa depan.
+
+        -- Facade
+                -- Facade adalah pola desain struktural yang menyediakan antarmuka yang disederhanakan (namun terbatas) ke sistem yang kompleks dari kelas, pustaka, atau kerangka kerja.
+                   Meskipun Facade mengurangi kompleksitas keseluruhan aplikasi, ia juga membantu memindahkan ketergantungan yang tidak diinginkan ke satu tempat.
+                   Dengan menggunakan Facade, kita dapat menyembunyikan kompleksitas sistem yang besar dan memudahkan penggunaannya.
+                   Hal ini dapat mengurangi kesalahan dan meningkatkan efisiensi dalam pengembangan dan perawatan kode di masa depan.
