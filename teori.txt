@@ -81,3 +81,9 @@
                    Meskipun Facade mengurangi kompleksitas keseluruhan aplikasi, ia juga membantu memindahkan ketergantungan yang tidak diinginkan ke satu tempat.
                    Dengan menggunakan Facade, kita dapat menyembunyikan kompleksitas sistem yang besar dan memudahkan penggunaannya.
                    Hal ini dapat mengurangi kesalahan dan meningkatkan efisiensi dalam pengembangan dan perawatan kode di masa depan.
+
+        -- Decorator
+                -- Decorator adalah pola desain struktural yang memungkinkan penambahan perilaku baru ke objek secara dinamis dengan menempatkannya di dalam objek wrapper khusus yang disebut decorator.
+                   Dengan menggunakan decorator, Anda dapat membungkus objek berulang kali karena kedua objek target dan decorator mengikuti antarmuka yang sama.
+                   Objek yang dihasilkan akan mendapatkan perilaku yang ditumpuk dari semua wrapper.
+                   Dengan menggunakan Decorator, Anda dapat menambahkan fitur baru ke objek tanpa mengubah struktur kelas asli, sehingga memudahkan pengembangan dan perawatan kode di masa depan.
