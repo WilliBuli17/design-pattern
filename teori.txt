@@ -87,3 +87,9 @@
                    Dengan menggunakan decorator, Anda dapat membungkus objek berulang kali karena kedua objek target dan decorator mengikuti antarmuka yang sama.
                    Objek yang dihasilkan akan mendapatkan perilaku yang ditumpuk dari semua wrapper.
                    Dengan menggunakan Decorator, Anda dapat menambahkan fitur baru ke objek tanpa mengubah struktur kelas asli, sehingga memudahkan pengembangan dan perawatan kode di masa depan.
+
+        -- Composite
+                -- Composite adalah pola desain struktural yang memungkinkan penggabungan objek ke dalam struktur seperti pohon dan bekerja dengan itu seolah-olah itu adalah satu objek.
+                   Composite menjadi solusi yang cukup populer untuk sebagian besar masalah yang memerlukan pembangunan struktur pohon.
+                   Fitur besar dari Composite adalah kemampuan untuk menjalankan metode secara rekursif di seluruh struktur pohon dan menjumlahkan hasilnya.
+                   Dengan menggunakan Composite, kita dapat memanipulasi struktur data kompleks dengan mudah dan efisien, serta mempermudah pengembangan dan perawatan kode di masa depan.
