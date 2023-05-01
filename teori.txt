@@ -93,3 +93,13 @@
                    Composite menjadi solusi yang cukup populer untuk sebagian besar masalah yang memerlukan pembangunan struktur pohon.
                    Fitur besar dari Composite adalah kemampuan untuk menjalankan metode secara rekursif di seluruh struktur pohon dan menjumlahkan hasilnya.
                    Dengan menggunakan Composite, kita dapat memanipulasi struktur data kompleks dengan mudah dan efisien, serta mempermudah pengembangan dan perawatan kode di masa depan.
+
+        -- Flyweight
+                -- Flyweight adalah pola desain struktural yang memungkinkan program untuk mendukung jumlah objek yang sangat besar dengan menjaga konsumsi memori mereka rendah.
+                   Pola ini mencapainya dengan berbagi sebagian dari keadaan objek antara beberapa objek.
+                   Dengan kata lain, Flyweight menghemat RAM dengan mem-cache data yang sama yang digunakan oleh berbagai objek.
+                   Dengan menggunakan Flyweight, kita dapat mengurangi penggunaan memori dalam program kita dan meningkatkan kinerja aplikasi, serta menghemat ruang penyimpanan.
+
+
+
+
