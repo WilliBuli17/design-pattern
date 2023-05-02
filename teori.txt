@@ -100,6 +100,16 @@
                    Dengan kata lain, Flyweight menghemat RAM dengan mem-cache data yang sama yang digunakan oleh berbagai objek.
                    Dengan menggunakan Flyweight, kita dapat mengurangi penggunaan memori dalam program kita dan meningkatkan kinerja aplikasi, serta menghemat ruang penyimpanan.
 
+        -- Proxy
+                -- Proxy adalah pola desain struktural yang menyediakan objek yang bertindak sebagai pengganti objek layanan yang sebenarnya digunakan oleh klien.
+                   Proxy menerima permintaan klien, melakukan beberapa pekerjaan (kontrol akses, caching, dll.) dan kemudian meneruskan permintaan ke objek layanan.
+                -- Objek proxy memiliki antarmuka yang sama dengan layanan, sehingga dapat saling dipertukarkan dengan objek asli ketika diberikan kepada klien.
+                   Dengan menggunakan Proxy, kita dapat mengontrol akses ke objek asli, mempercepat kinerja aplikasi dengan menyediakan caching data, atau menyediakan antarmuka yang sederhana untuk mengakses objek yang kompleks.
 
+                -- Proxy Pattern VS Flyweight Pattern
+                        Proxy Pattern dan Flyweight Pattern adalah dua konsep yang berbeda dalam design pattern, meskipun keduanya dapat digunakan untuk mengoptimalkan penggunaan memori.
+                        Proxy Pattern digunakan untuk mengendalikan akses ke sebuah objek dengan memberikan objek pengganti (proxy) sebagai representasi dari objek tersebut. Tujuannya adalah untuk mengurangi biaya pembuatan dan inisialisasi objek yang mahal. Proxy Pattern dapat digunakan ketika objek memiliki biaya pembuatan atau inisialisasi yang tinggi, atau ketika objek tersebut memerlukan akses kontrol atau validasi sebelum digunakan.
+                        Sementara itu, Flyweight Pattern digunakan untuk mengurangi penggunaan memori dengan berbagi objek yang sama pada banyak tempat dalam sebuah aplikasi. Tujuannya adalah untuk mengurangi biaya pembuatan dan penyimpanan objek dalam memori. Flyweight Pattern digunakan ketika aplikasi harus menciptakan banyak objek dengan data yang serupa dan tidak terlalu kompleks.
+                        Dalam hal penggunaannya, Proxy Pattern dan Flyweight Pattern digunakan untuk tujuan yang berbeda. Proxy Pattern digunakan untuk mengendalikan akses ke sebuah objek, sedangkan Flyweight Pattern digunakan untuk mengoptimalkan penggunaan memori dengan berbagi objek yang sama pada banyak tempat dalam aplikasi. Meskipun keduanya dapat digunakan untuk mengurangi biaya pembuatan objek, konsep dan implementasinya berbeda.
 
 
